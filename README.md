@@ -47,10 +47,9 @@
             │   │   └── regex.js
             │   │
             │   ├── bower_components
-            │   │               └── angular
-            │   │               └── font-awesome
-            │   │               └── jquery
-            │   │               └── jquery                      
+            │   │   └── angular
+            │   │   └── font-awesome
+            │   │   └── jquery
             │   │ 
             │   ├── styles
             │   │   └── main.css
