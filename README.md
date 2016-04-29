@@ -32,7 +32,7 @@
     <li>Bootstrap for responsive design</li>
 </ul>
 </ul>
-<h4>Fundemental Architecture</h4>
+<h4>Directory Structure</h4>
 <div>
     <pre>
         <code>
