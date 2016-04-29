@@ -1,0 +1,12 @@
+button a{
+    text-decoration: none;
+}
+button:hover{
+    background-color: red;
+}
+.base64:before{
+    content:"\f001";
+    font-family:FontAwesome;
+
+}
+

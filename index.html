@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="data/index.json"></script>
+    <script src="scripts/regex.js"></script>
+    <script src="scripts/main.js"></script>
+    <title>Angular</title>
+</head>
+<body ng-app="mainApp" ng-controller="controllerMain">
+    <h3 class="base64">            
+        <dl ng-repeat="button in buttons">
+        <span class="fa fa-spinner fa-spin fa-3x fa-fw margin-bottom" style="font-size:15px;"></span>
+            <dt style="display:inline-block;">
+                <button><a target="_blank" href="{{button.href}}">{{button.text}}</a></button>
+            </dt>
+            <dd>{{button.description}}</dd>
+        </dl>
+    </h3>
+</body>
+</html>

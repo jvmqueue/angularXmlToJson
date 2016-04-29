@@ -1,0 +1,34 @@
+    var jvm = jvm || {};
+    jvm.buttons = [
+        {
+            "text":"Portfolio",
+            "href":"http://www.jvmqueue.com/",
+            "description":"my portfolio"
+        },
+        {
+            "text":"Resume",
+            "href":"http://www.jvmqueue.com/resume",
+            "description":"my Resume"
+        },
+        {
+            "text":"Canadian Univ. Women",
+            "href":"http://cfuw-saskatoon.org/",
+            "description":"Canadian Federation of University Women"
+        },
+        {
+            "text":"Canadian Artist CV",
+            "href":"http://malaikazcharbonneau.com/resume/",
+            "description":"Malaika Z. Charbonneau"
+        },
+        {
+            "text":"Git Repository",
+            "href":"https://github.com/jvmqueue?tab=repositories,foundIframeHasImage=true",
+            "description":"GitHub Repository"
+        },
+        {
+            "text":"Favorite Links",
+            "href":"http://jvmqueue.com/favoriteLinks/site/",
+            "description":"Technical Links"
+        }
+
+    ]
