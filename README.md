@@ -25,7 +25,6 @@
 </ul>
 <h3>Stategies and Techniques</h3>
 <ul>
-    <li></li>
     <li>Custom JS libraries for code reusabiltiy</li>
     <li>Angular services to consume custom Js libraries</li>
     <li>XML for server side data</li>
