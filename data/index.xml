@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <resume>
-    <file base="./images/">&#160;</file>
-    <resources>
-        <resource>GlennBlankenshipsResume2016April26</resource>
-        <adobeReader>http://get.adobe.com/reader/</adobeReader>
-    </resources>
-    <location>
-        <name>Glenn Blankenship</name>
-        <cityState>Atlanta, Georgia</cityState>
-        <email>glenn.blankenship@gmail.com</email>
-        <portfolio>http://www.jvmQueue.com/</portfolio>
-    </location>
     <download>
         <h3>Download Word or PDF file</h3>
         <option>-- Select a document type --</option>
@@ -18,56 +7,8 @@
         <option>PDF</option>
         <button>
             <label>Download File</label>
+            <label>Label A File</label>
+            <label>Last Label</label>
         </button>
     </download>
-    <skills>
-        <skill numOfYears="9+ yrs">Web Development</skill>
-        <skill numOfYears="8+ yrs">HTML/DHTML</skill>
-        <skill numOfYears="6+ yrs">XHTML</skill>
-        <skill numOfYears="2+ yrs">HTML5</skill>
-        <skill numOfYears="8+ yrs">JavaScript</skill>
-        <skill numOfYears="1+ yrs">Backbone.js</skill>
-        <skill numOfYears="1+ yrs">Boostrap.js</skill>
-        <skill numOfYears="1+ yrs">Underscore.js</skill>
-        <skill numOfYears="1+ yrs">Require.js</skill>
-        <skill numOfYears="2+ yrs">Prototype.js</skill>
-        <skill numOfYears="3+ yrs">Jquery.js</skill>
-        <skill numOfYears="3+ yrs">AJAX</skill>
-        <skill numOfYears="5+ yrs">XML</skill>
-        <skill numOfYears="2+ yrs">XSL</skill>      
-        <skill numOfYears="5+ yrs">CSS</skill>
-        <skill numOfYears="1+ yrs">JSF</skill>
-        <skill numOfYears="2+ yrs">JSP</skill>
-        <skill numOfYears="2+ yrs">Java</skill>
-        <skill numOfYears="1+ yrs">.NET</skill>
-        <skill numOfYears="1+ yrs">Charles Proxy</skill>
-        <skill numOfYears="5+ yrs">Dreamweaver</skill>
-        <skill numOfYears="2+ yrs">Eclipse</skill>
-        <skill numOfYears="1+ yrs">Git</skill>
-        <skill numOfYears="1+ yrs">IntelliJ</skill>
-        <skill numOfYears="3+ yrs">Photoshop</skill>
-    </skills>
-    <employment>
-        <experience date="March 2016 - April 2016">
-            <organization location="Atlanta, GA">Genuine Parts Company, Napa</organization>
-            <title>Senior UI Developer</title>
-            <task>Used Angular JS for code organization</task>
-            <task>Font Awesome for graphic optimization</task>
-            <task>Responsible for quick prototyping for business</task>
-            <task>Reviewed junior developer's scripts ensuring standards were maintained</task>
-        </experience>        
-        <experience date="August 2015 - Present">
-            <organization location="Saskatchewan, Canada">Canadian Federation of University Women - Saskatoon</organization>
-            <title>Senior UI Developer, working remote from Atlanta</title>
-            <task>Used Backbone.js for code organization, MVC</task>
-            <task>Used Underscore for HTML templating</task>
-            <task>Used Boostrap for responsive design</task>
-            <task>Used CSS3 for transformation</task>
-            <task>Use jQuery for DOM access, listeners</task>
-            <task>Wrote custom utilities: XML to JSON, RegEx</task>
-            <task>Used PhotoShop for image splicing</task>
-            <task>Used Bower for downloading dependencies</task>
-            <task>Used Emmet to speed up writing markup</task>
-        </experience>
-    </employment>
 </resume>
