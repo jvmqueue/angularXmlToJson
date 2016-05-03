@@ -23,6 +23,15 @@
             <dd>{{button.description}}</dd>
         </dl>
     </h3>
-    <div><span>JSON:</span>{{jsonFromXml.RESUME.DOWNLOAD.H3}}</div>
+    <div>
+        <h3>{{jsonFromXml.resume.resources.resource}}</h3>
+        <h3> 
+            <a href="{{jsonFromXml.resume.resources.adobereader}}">Adobe Reader</a>
+        </h3>
+    </div>
+    <select name="" id="">
+        <option ng-repeat="val in jsonFromXml.resume.download.options.option track by $index" value="{{val}}">{{val}}</option>
+    </select>
+
 </body>
 </html>
