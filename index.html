@@ -14,24 +14,31 @@
     <title>Angular</title>
 </head>
 <body ng-app="mainApp" ng-controller="controllerMain">
-    <h3 class="base64">            
-        <dl ng-repeat="button in buttons">
-        <span class="fa fa-spinner fa-spin fa-3x fa-fw margin-bottom" style="font-size:15px;"></span>
-            <dt style="display:inline-block;">
-                <button><a target="_blank" href="{{button.href}}">{{button.text}}</a></button>
-            </dt>
-            <dd>{{button.description}}</dd>
-        </dl>
-    </h3>
+    <section>
+        <span>Contact Me</span>
+        <p>{{jsonFromXml.resume.location.name}}</p>
+        <p>{{jsonFromXml.resume.location.citystate}}</p>
+        <p>
+            <a href="mailto:{{jsonFromXml.resume.location.email}}">{{jsonFromXml.resume.location.email}}</a>
+        </p>
+        <p>
+            <a href="{{jsonFromXml.resume.location.portfolio}}" target="_blank">Go to Portfolio</a>
+        </p>
+    </section>
     <div>
         <h3>{{jsonFromXml.resume.resources.resource}}</h3>
         <h3> 
             <a href="{{jsonFromXml.resume.resources.adobereader}}">Adobe Reader</a>
         </h3>
     </div>
+    <p>{{jsonFromXml.resume.download.h3}}</p>
     <select name="" id="">
         <option ng-repeat="val in jsonFromXml.resume.download.options.option track by $index" value="{{val}}">{{val}}</option>
     </select>
+
+    <div>
+        <h6 ng-repeat="val in jsonFromXml.resume.skills.skill track by $index" value="{{val}}">{{val}}</h6>
+    </div>
 
 </body>
 </html>
