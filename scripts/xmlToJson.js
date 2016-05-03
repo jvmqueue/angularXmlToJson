@@ -20,7 +20,7 @@ jvm.xmlToJson = (function(){
             var objJson = null;
             
             var blnIsNotPrintable = false;
-
+            strHashName != null ? strHashName = strHashName.toLowerCase():'';
             if(strHashName in obj){
                 obj = obj[strHashName];
             }
@@ -28,7 +28,7 @@ jvm.xmlToJson = (function(){
 
             if(xml.nodeType === ELEMENT_NODE){
                    if(xml.firstChild.nodeValue){
-                        strHashName = xml.nodeName;
+                        strHashName = xml.nodeName.toLowerCase();
                         text = xml.firstChild.nodeValue;
                         if(strHashName in obj){
                             var objTemp = {};
