@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <resume>
+    <file base="./images/">&#160;</file>
+    <resources>
+        <resource>GlennBlankenshipsResume2016April26</resource>
+        <adobeReader>http://get.adobe.com/reader/</adobeReader>
+    </resources>    
     <download>
         <h3>Download Word or PDF file</h3>
         <options>
