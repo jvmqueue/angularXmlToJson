@@ -13,7 +13,6 @@ jvm.mainApp.service('util',
 jvm.mainApp.controller('controllerMain', ['$scope', '$http', 'util', function($scope, $http, util){
 
     var self = this;
-    $scope.buttons = jvm.buttons;
     self.hash = {};
     self.documentElement;
     self.intCounter = 0;
