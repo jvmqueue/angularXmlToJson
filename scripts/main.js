@@ -4,6 +4,7 @@ jvm.mainApp = new angular.module('mainApp', []);
 jvm.mainApp.service('util', 
     function(){
         this.regex = jvm.regEx.fnc;        
+        this.xml = jvm.xmlToJson.fnc;
     }
 );
 
@@ -16,85 +17,25 @@ jvm.mainApp.controller('controllerMain', ['$scope', '$http', 'util', function($s
     self.hash = {};
     self.documentElement;
     self.intCounter = 0;
+    self.jsonFromXml = null;
 
     var _func = {
-        request:function(paramPath){
+        request:function(paramPath){ // TODO: refactor request so that we can reuse it
             $http({
                 method:'GET',
                 url:paramPath
             }).then(function successCallback(response){
-
                 var data = response.data;
                 var xmlResponseXml = $(response.data)[2];
-                var jsonFromXml = _func.convertXmlToJson(xmlResponseXml);
+                self.jsonFromXml = util.xml.convertXmlToJson({xml:xmlResponseXml});
 
+                $scope.jsonFromXml = self.jsonFromXml;
             }, function errorCallback(){
                 console.group('ERROR CALL BACK');
                     console.log(':\t', 'Reached');
                    console.groupEnd(); 
             })
-        }, // End request
-        convertXmlToJson:function(paramXml, paramObj, paramHashName){
-            var xml = paramXml;
-            var nodeElement = null;
-            var nodeName = null;
-            var strHashName = paramHashName || null;
-            var text = null;
-            var obj = paramObj || {};
-
-
-            var blnIsNotPrintable = false;
-            
-            var ELEMENT_NODE = 1;
-            var TEXT_NODE = 3;
-
-            if(xml.nodeType === ELEMENT_NODE){
-                   if(xml.firstChild.nodeValue){
-                        strHashName = xml.nodeName;
-                        text = xml.firstChild.nodeValue;
-                        if(strHashName in obj){
-                            var objTemp = {};
-                            objTemp[strHashName] = obj[strHashName];                            
-
-                            if( Array.isArray(obj[strHashName]) === true){
-                                obj[strHashName].push(text);
-                                objTemp = null;
-                            }else{
-                                obj[strHashName] = [];
-                                obj[strHashName].push(objTemp[strHashName]);
-                                obj[strHashName].push(text);
-                            }
-                        }else{
-                            blnIsNotPrintable = util.regex.blnNotPrintable(text)
-                            blnIsNotPrintable === true ? obj[strHashName] = {} : obj[strHashName] = xml.firstChild.nodeValue;                        
-                        }
-
-                   }
-            }else if(xml.nodeType === TEXT_NODE){
-                console.group('NODE TYPE 3');
-                    console.log('xml:\t', xml);
-                   console.groupEnd(); 
-            } 
-
-            if(!self.documentElement){
-                self.documentElement = xml.nodeName;
-                self.hash[self.documentElement]; 
-            }            
-
-            if( xml && xml.hasChildNodes ){
-                var nodeChilds = xml.childNodes;
-                for(var i = 0, len = nodeChilds.length; i < len; i++){
-                    if(nodeChilds[i].nodeType ===  1){
-                        _func.convertXmlToJson(nodeChilds[i], obj, strHashName);
-                    }
-                }                                
-            }
-
-            console.group('CONVERT XML TO JSON');
-                console.log('obj:\t', obj);
-               console.groupEnd(); 
-
-        }  // End convertXmlToJson
+        } // End request
     }; // End _func
 
     self.init = (function(){
