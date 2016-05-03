@@ -4,7 +4,13 @@
     <resources>
         <resource>GlennBlankenshipsResume2016April26</resource>
         <adobeReader>http://get.adobe.com/reader/</adobeReader>
-    </resources>    
+    </resources>
+    <location>
+        <name>Glenn Blankenship</name>
+        <cityState>Atlanta, Georgia</cityState>
+        <email>glenn.blankenship@gmail.com</email>
+        <portfolio>http://www.jvmQueue.com/</portfolio>
+    </location>    
     <download>
         <h3>Download Word or PDF file</h3>
         <options>
@@ -18,4 +24,31 @@
             <label>Last Label</label>
         </button>
     </download>
+    <skills>
+        <skill numOfYears="9+ yrs">Web Development</skill>
+        <skill numOfYears="8+ yrs">HTML/DHTML</skill>
+        <skill numOfYears="6+ yrs">XHTML</skill>
+        <skill numOfYears="2+ yrs">HTML5</skill>
+        <skill numOfYears="8+ yrs">JavaScript</skill>
+        <skill numOfYears="1+ yrs">Backbone.js</skill>
+        <skill numOfYears="1+ yrs">Boostrap.js</skill>
+        <skill numOfYears="1+ yrs">Underscore.js</skill>
+        <skill numOfYears="1+ yrs">Require.js</skill>
+        <skill numOfYears="2+ yrs">Prototype.js</skill>
+        <skill numOfYears="3+ yrs">Jquery.js</skill>
+        <skill numOfYears="3+ yrs">AJAX</skill>
+        <skill numOfYears="5+ yrs">XML</skill>
+        <skill numOfYears="2+ yrs">XSL</skill>      
+        <skill numOfYears="5+ yrs">CSS</skill>
+        <skill numOfYears="1+ yrs">JSF</skill>
+        <skill numOfYears="2+ yrs">JSP</skill>
+        <skill numOfYears="2+ yrs">Java</skill>
+        <skill numOfYears="1+ yrs">.NET</skill>
+        <skill numOfYears="1+ yrs">Charles Proxy</skill>
+        <skill numOfYears="5+ yrs">Dreamweaver</skill>
+        <skill numOfYears="2+ yrs">Eclipse</skill>
+        <skill numOfYears="1+ yrs">Git</skill>
+        <skill numOfYears="1+ yrs">IntelliJ</skill>
+        <skill numOfYears="3+ yrs">Photoshop</skill>
+    </skills>    
 </resume>
