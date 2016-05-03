@@ -2,9 +2,11 @@
 <resume>
     <download>
         <h3>Download Word or PDF file</h3>
-        <option>-- Select a document type --</option>
-        <option>Word</option>
-        <option>PDF</option>
+        <options>
+            <option>-- Select a document type --</option>
+            <option>Word</option>
+            <option>PDF</option>            
+        </options>
         <button>
             <label>Download File</label>
             <label>Label A File</label>
