@@ -5,43 +5,27 @@ jvm.mainApp.service('util',
     function(){
         this.regex = jvm.regEx.fnc;        
         this.xml = jvm.xmlToJson.fnc;
+        this.httpRequest = jvm.requestHttp.fnc;
     }
 );
-
-
-
-jvm.mainApp.controller('controllerMain', ['$scope', '$http', 'util', function($scope, $http, util){
-
+jvm.mainApp.controller('controllerMain', ['$scope', 'util', function($scope, util){
     var self = this;
-    self.hash = {};
-    self.documentElement;
-    self.intCounter = 0;
     self.jsonFromXml = null;
 
-    var _func = {
-        request:function(paramPath){ // TODO: refactor request so that we can reuse it
-            $http({
-                method:'GET',
-                url:paramPath
-            }).then(function successCallback(response){
-                var data = response.data;
-                var xmlResponseXml = $(response.data)[2];
-                self.jsonFromXml = util.xml.convertXmlToJson({xml:xmlResponseXml});
+    var _fnc = {
+        interval:null,
+        setData:function(data){
+            $scope.jsonFromXml = util.xml.convertXmlToJson({xml:data.data.responseXML});
+            $scope.$digest(); // tell angular to update model
+        },
+        getData:function(){
+            util.httpRequest.request({url:'data/index.xml', returnData:_fnc.setData});  
+        }      
+    };
 
-                $scope.jsonFromXml = self.jsonFromXml;
-            }, function errorCallback(){
-                console.group('ERROR CALL BACK');
-                    console.log(':\t', 'Reached');
-                   console.groupEnd(); 
-            })
-        } // End request
-    }; // End _func
-
-    self.init = (function(){
-
-        $http.defaults.headers.common.Accept = 'text/xml';
-        _func.request('data/index.xml');
-    })();
+    self.init = (function(){        
+          _fnc.getData();
+    })(); // End self.init
 
 
 }]);
