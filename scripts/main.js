@@ -13,7 +13,6 @@ jvm.mainApp.controller('controllerMain', ['$scope', 'util', function($scope, uti
     self.jsonFromXml = null;
 
     var _fnc = {
-        interval:null,
         setData:function(data){
             $scope.jsonFromXml = util.xml.convertXmlToJson({xml:data.data.responseXML});
             $scope.$digest(); // tell angular to update model
