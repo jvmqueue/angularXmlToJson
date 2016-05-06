@@ -9,6 +9,7 @@
     <script src="bower_components/angular/angular.js"></script>
     <script src="data/index.json"></script>
     <script src="scripts/regex.js"></script>
+    <script src="scripts/requestHttp.js"></script>
     <script src="scripts/xmlToJson.js"></script>
     <script src="scripts/main.js"></script>
     <title>Angular</title>
@@ -37,7 +38,7 @@
     </select>
 
     <div>
-        <h6 ng-repeat="val in jsonFromXml.resume.skills.skill track by $index" value="{{val}}">{{val}}</h6>
+        <h6 ng-repeat="(key, val) in jsonFromXml.resume.skills.skill" value="{{val}}">{{val}}</h6>
     </div>
 
 </body>
