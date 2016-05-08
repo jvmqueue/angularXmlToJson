@@ -9,4 +9,10 @@ button:hover{
     font-family:FontAwesome;
 
 }
+.block{
+    display:block;
+}
+.inlineblock{
+    display:inline-block;
+}
 

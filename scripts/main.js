@@ -13,9 +13,12 @@ jvm.mainApp.controller('controllerMain', ['$scope', 'util', function($scope, uti
     self.jsonFromXml = null;
 
     var _fnc = {
-        setData:function(data){
-            $scope.jsonFromXml = util.xml.convertXmlToJson({xml:data.data.responseXML});
+        setData:function(options){
+            $scope.jsonFromXml = util.xml.convertXmlToJson({xml:options.data.responseXML});
             $scope.$digest(); // tell angular to update model
+            console.group('SET DATA');
+                console.log('$scope.jsonFromXml:\t', $scope.jsonFromXml);
+               console.groupEnd(); 
         },
         getData:function(){
             util.httpRequest.request({url:'data/index.xml', returnData:_fnc.setData});  

@@ -13,7 +13,7 @@ jvm.requestHttp = (function($){
                 headers:headers,
                 dataType:'xml',
                 complete:function(data){
-                   options.returnData.call(this, {data:data}); 
+                   options.returnData.call(this, {data:data}); // invoke callback
                 }                
             });
         }

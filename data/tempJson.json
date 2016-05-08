@@ -1,1 +1,288 @@
-"{"#text":{},"FILE":{"@attributes":{"base":"./images/"},"#text":" "},"RESOURCES":{"#text":{},"RESOURCE":{"#text":"GlennBlankenshipsResume2016April26"},"ADOBEREADER":{"#text":"http://get.adobe.com/reader/"}},"LOCATION":{"#text":{},"NAME":{"#text":"Glenn Blankenship"},"CITYSTATE":{"#text":"Atlanta, Georgia"},"EMAIL":{"#text":"glenn.blankenship@gmail.com"},"PORTFOLIO":{"#text":"http://www.jvmQueue.com/"}},"DOWNLOAD":{"#text":{},"H3":{"#text":"Download Word or PDF file"},"OPTION":{"#text":"PDF"},"BUTTON":{"#text":{},"TEXT":{"#text":"Download File"}}},"SKILLS":{"#text":{},"SKILL":{"@attributes":{"numofyears":"3+ yrs"},"#text":"Photoshop"}},"EMPLOYMENT":{"#text":{},"EXPERIENCE":{"@attributes":{"date":"August 2015 - Present"},"#text":{},"ORGANIZATION":{"@attributes":{"location":"Saskatchewan, Canada"},"#text":"Canadian Federation of University Women - Saskatoon"},"TITLE":{"#text":"Senior UI Developer, working remote from Atlanta"},"TASK":{"#text":"Used Emmet to speed up writing markup"}}}}"
+{
+   "resume": {
+      "file": " ",
+      "resources": {
+         "resource": "GlennBlankenshipsResume2016April26",
+         "adobereader": "http://get.adobe.com/reader/"
+      },
+      "location": {
+         "name": "Glenn Blankenship",
+         "citystate": "Atlanta, Georgia",
+         "email": "glenn.blankenship@gmail.com",
+         "portfolio": "http://www.jvmQueue.com/"
+      },
+      "download": {
+         "h3": "Download Word or PDF file",
+         "options": {
+            "option": [
+               {
+                  "option": {
+                     "value": "option",
+                     "attributes": []
+                  },
+                  "$$hashKey": "object:3"
+               },
+               {
+                  "value": "Word",
+                  "attributes": [],
+                  "$$hashKey": "object:4"
+               },
+               {
+                  "value": "PDF",
+                  "attributes": [],
+                  "$$hashKey": "object:5"
+               }
+            ]
+         },
+         "button": {
+            "label": [
+               {
+                  "label": {
+                     "value": "label",
+                     "attributes": []
+                  }
+               },
+               {
+                  "value": "Label A File",
+                  "attributes": []
+               },
+               {
+                  "value": "Last Label",
+                  "attributes": []
+               }
+            ]
+         }
+      },
+      "skills": {
+         "skill": [
+            {
+               "skill": {
+                  "value": "skill",
+                  "attributes": [
+                     {
+                        "numOfYears": "8+ yrs"
+                     }
+                  ]
+               },
+               "$$hashKey": "object:9"
+            },
+            {
+               "value": "HTML/DHTML",
+               "attributes": [
+                  {
+                     "numOfYears": "8+ yrs"
+                  }
+               ],
+               "$$hashKey": "object:10"
+            },
+            {
+               "value": "XHTML",
+               "attributes": [
+                  {
+                     "numOfYears": "6+ yrs"
+                  }
+               ],
+               "$$hashKey": "object:11"
+            },
+            {
+               "value": "HTML5",
+               "attributes": [
+                  {
+                     "numOfYears": "2+ yrs"
+                  }
+               ],
+               "$$hashKey": "object:12"
+            },
+            {
+               "value": "JavaScript",
+               "attributes": [
+                  {
+                     "numOfYears": "8+ yrs"
+                  }
+               ],
+               "$$hashKey": "object:13"
+            },
+            {
+               "value": "Backbone js",
+               "attributes": [
+                  {
+                     "numOfYears": "1+ yrs"
+                  }
+               ],
+               "$$hashKey": "object:14"
+            },
+            {
+               "value": "Bootstrap js",
+               "attributes": [
+                  {
+                     "numOfYears": "1+ yrs"
+                  }
+               ],
+               "$$hashKey": "object:15"
+            },
+            {
+               "value": "Underscore js",
+               "attributes": [
+                  {
+                     "numOfYears": "1+ yrs"
+                  }
+               ],
+               "$$hashKey": "object:16"
+            },
+            {
+               "value": "Require js",
+               "attributes": [
+                  {
+                     "numOfYears": "1+ yrs"
+                  }
+               ],
+               "$$hashKey": "object:17"
+            },
+            {
+               "value": "Protototype js",
+               "attributes": [
+                  {
+                     "numOfYears": "2+ yrs"
+                  }
+               ],
+               "$$hashKey": "object:18"
+            },
+            {
+               "value": "Jquery js",
+               "attributes": [
+                  {
+                     "numOfYears": "3+ yrs"
+                  }
+               ],
+               "$$hashKey": "object:19"
+            },
+            {
+               "value": "AJAX",
+               "attributes": [
+                  {
+                     "numOfYears": "3+ yrs"
+                  }
+               ],
+               "$$hashKey": "object:20"
+            },
+            {
+               "value": "XML",
+               "attributes": [
+                  {
+                     "numOfYears": "5+ yrs"
+                  }
+               ],
+               "$$hashKey": "object:21"
+            },
+            {
+               "value": "XSL",
+               "attributes": [
+                  {
+                     "numOfYears": "2+ yrs"
+                  }
+               ],
+               "$$hashKey": "object:22"
+            },
+            {
+               "value": "CSS",
+               "attributes": [
+                  {
+                     "numOfYears": "5+ yrs"
+                  }
+               ],
+               "$$hashKey": "object:23"
+            },
+            {
+               "value": "JSF",
+               "attributes": [
+                  {
+                     "numOfYears": "1+ yrs"
+                  }
+               ],
+               "$$hashKey": "object:24"
+            },
+            {
+               "value": "JSP",
+               "attributes": [
+                  {
+                     "numOfYears": "2+ yrs"
+                  }
+               ],
+               "$$hashKey": "object:25"
+            },
+            {
+               "value": "Java",
+               "attributes": [
+                  {
+                     "numOfYears": "2+ yrs"
+                  }
+               ],
+               "$$hashKey": "object:26"
+            },
+            {
+               "value": ".NET",
+               "attributes": [
+                  {
+                     "numOfYears": "1+ yrs"
+                  }
+               ],
+               "$$hashKey": "object:27"
+            },
+            {
+               "value": "Charles Proxy",
+               "attributes": [
+                  {
+                     "numOfYears": "1+ yrs"
+                  }
+               ],
+               "$$hashKey": "object:28"
+            },
+            {
+               "value": "Dreamweaver",
+               "attributes": [
+                  {
+                     "numOfYears": "5+ yrs"
+                  }
+               ],
+               "$$hashKey": "object:29"
+            },
+            {
+               "value": "Eclipse IDE",
+               "attributes": [
+                  {
+                     "numOfYears": "2+ yrs"
+                  }
+               ],
+               "$$hashKey": "object:30"
+            },
+            {
+               "value": "Git Command Line",
+               "attributes": [
+                  {
+                     "numOfYears": "1+ yrs"
+                  }
+               ],
+               "$$hashKey": "object:31"
+            },
+            {
+               "value": "IntelliJ IDE",
+               "attributes": [
+                  {
+                     "numOfYears": "1+ yrs"
+                  }
+               ],
+               "$$hashKey": "object:32"
+            },
+            {
+               "value": "PhotoShop",
+               "attributes": [
+                  {
+                     "numOfYears": "3+ yrs"
+                  }
+               ],
+               "$$hashKey": "object:33"
+            }
+         ]
+      }
+   }
+}

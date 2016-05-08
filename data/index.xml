@@ -25,17 +25,18 @@
         </button>
     </download>
     <skills>
+        <skill numOfYears="9+ yrs">&#160;</skill>
         <skill numOfYears="9+ yrs">Web Development</skill>
         <skill numOfYears="8+ yrs">HTML/DHTML</skill>
         <skill numOfYears="6+ yrs">XHTML</skill>
         <skill numOfYears="2+ yrs">HTML5</skill>
         <skill numOfYears="8+ yrs">JavaScript</skill>
-        <skill numOfYears="1+ yrs">Backbone.js</skill>
-        <skill numOfYears="1+ yrs">Boostrap.js</skill>
-        <skill numOfYears="1+ yrs">Underscore.js</skill>
-        <skill numOfYears="1+ yrs">Require.js</skill>
-        <skill numOfYears="2+ yrs">Prototype.js</skill>
-        <skill numOfYears="3+ yrs">Jquery.js</skill>
+        <skill numOfYears="1+ yrs">Backbone js</skill>
+        <skill numOfYears="1+ yrs">Bootstrap js</skill>
+        <skill numOfYears="1+ yrs">Underscore js</skill>
+        <skill numOfYears="1+ yrs">Require js</skill>
+        <skill numOfYears="2+ yrs">Protototype js</skill>
+        <skill numOfYears="3+ yrs">Jquery js</skill>
         <skill numOfYears="3+ yrs">AJAX</skill>
         <skill numOfYears="5+ yrs">XML</skill>
         <skill numOfYears="2+ yrs">XSL</skill>      
@@ -46,9 +47,9 @@
         <skill numOfYears="1+ yrs">.NET</skill>
         <skill numOfYears="1+ yrs">Charles Proxy</skill>
         <skill numOfYears="5+ yrs">Dreamweaver</skill>
-        <skill numOfYears="2+ yrs">Eclipse</skill>
-        <skill numOfYears="1+ yrs">Git</skill>
-        <skill numOfYears="1+ yrs">IntelliJ</skill>
-        <skill numOfYears="3+ yrs">Photoshop</skill>
+        <skill numOfYears="2+ yrs">Eclipse IDE</skill>
+        <skill numOfYears="1+ yrs">Git Command Line</skill>
+        <skill numOfYears="1+ yrs">IntelliJ IDE</skill>
+        <skill numOfYears="3+ yrs">PhotoShop</skill>
     </skills>    
 </resume>

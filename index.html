@@ -34,11 +34,11 @@
     </div>
     <p>{{jsonFromXml.resume.download.h3}}</p>
     <select name="" id="">
-        <option ng-repeat="val in jsonFromXml.resume.download.options.option track by $index" value="{{val}}">{{val}}</option>
+        <option ng-repeat="val in jsonFromXml.resume.download.options.option" value="{{val}}">{{val.value}}</option>
     </select>
 
     <div>
-        <h6 ng-repeat="(key, val) in jsonFromXml.resume.skills.skill" value="{{val}}">{{val}}</h6>
+        <p ng-repeat="(key, val) in jsonFromXml.resume.skills.skill" value="{{key}}">{{val.value}}</p>
     </div>
 
 </body>

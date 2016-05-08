@@ -10,6 +10,21 @@ jvm.xmlToJson = (function(){
     var TEXT_NODE = 3;    
     
     var _fnc = {
+        getAttributes:function(paramNode){
+            var node = paramNode;
+            var json = [];
+            var hash = {};
+            var strName = null;
+            var strValue = null;
+
+            for(var i = 0, len = node.attributes.length; i < len; i++){
+                   strName = node.attributes[i].name;
+                   strValue = node.attributes[i].value;
+                   hash[strName] = strValue;
+                   json.push(hash);
+            }
+            return json;
+        },
         convertXmlToJson:function(options){
             var xml = options.xml;
             var nodeElement = null;
@@ -17,9 +32,9 @@ jvm.xmlToJson = (function(){
             var strHashName = options.hashName || null;
             var text = null;
             var obj = options.obj || {};
-            var objJson = null;
-            
+            var objJson = null;            
             var blnIsNotPrintable = false;
+            
             strHashName != null ? strHashName = strHashName.toLowerCase():'';
             if(strHashName in obj){
                 obj = obj[strHashName];
@@ -30,21 +45,28 @@ jvm.xmlToJson = (function(){
                    if(xml.firstChild.nodeValue){
                         strHashName = xml.nodeName.toLowerCase();
                         text = xml.firstChild.nodeValue;
-                        if(strHashName in obj){
-                            var objTemp = {};
-                            objTemp[strHashName] = obj[strHashName];                            
 
-                            if( Array.isArray(obj[strHashName]) === true){
-                                obj[strHashName].push(text);
+                        if(strHashName in obj){ // name in object so must push this onto an array
+                            var objTemp = {};
+                            var attributes = _fnc.getAttributes(xml);
+
+                            objTemp[strHashName] = {value:text, attributes:attributes};
+
+                            if( Array.isArray(obj[strHashName]) === true ){  
+                                
+                                obj[strHashName].push({value:text, attributes:attributes});
                                 objTemp = null;
                             }else{
-                                obj[strHashName] = [];
-                                obj[strHashName].push(objTemp[strHashName]);
-                                obj[strHashName].push(text);
+                                blnIsNotPrintable = jvm.regEx.fnc.blnNotPrintable(text);    
+                                if(!blnIsNotPrintable){ 
+                                    obj[strHashName] = [];     
+                                    obj[strHashName].push(objTemp);
+                                    obj[strHashName].push({value:text, attributes:attributes});
+                                }
                             }
                         }else{
                             blnIsNotPrintable = jvm.regEx.fnc.blnNotPrintable(text);    
-                            blnIsNotPrintable === true ? obj[strHashName] = {} : obj[strHashName] = xml.firstChild.nodeValue;                        
+                            blnIsNotPrintable === true ? obj[strHashName] = {} : obj[strHashName] = {value:text, attributes:attributes};
                         }
 
                    }
