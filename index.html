@@ -37,9 +37,17 @@
         <option ng-repeat="val in jsonFromXml.resume.download.options.option" value="{{val}}">{{val.value}}</option>
     </select>
 
-    <div>
-        <p ng-repeat="(key, val) in jsonFromXml.resume.skills.skill" value="{{key}}">{{val.value}}</p>
-    </div>
+    
+        <div ng-repeat="(key, val) in jsonFromXml.resume.skills.skill">
+            <p>{{val.text}}</p>
+            <div ng-repeat="attr in val.attributes">
+                <p>{{attr.name}}</p>
+                <p>{{attr.value}}</p>
+            <div/>
+
+        </div>
+
+    
 
 </body>
 </html>
