@@ -1,23 +1,39 @@
 {
    "resume": {
-      "file": " ",
+      "file": {
+         "value": " "
+      },
       "resources": {
-         "resource": "GlennBlankenshipsResume2016April26",
-         "adobereader": "http://get.adobe.com/reader/"
+         "resource": {
+            "value": "GlennBlankenshipsResume2016April26"
+         },
+         "adobereader": {
+            "value": "http://get.adobe.com/reader/"
+         }
       },
       "location": {
-         "name": "Glenn Blankenship",
-         "citystate": "Atlanta, Georgia",
-         "email": "glenn.blankenship@gmail.com",
-         "portfolio": "http://www.jvmQueue.com/"
+         "name": {
+            "value": "Glenn Blankenship"
+         },
+         "citystate": {
+            "value": "Atlanta, Georgia"
+         },
+         "email": {
+            "value": "glenn.blankenship@gmail.com"
+         },
+         "portfolio": {
+            "value": "http://www.jvmQueue.com/"
+         }
       },
       "download": {
-         "h3": "Download Word or PDF file",
+         "h3": {
+            "value": "Download Word or PDF file"
+         },
          "options": {
             "option": [
                {
                   "option": {
-                     "value": "option",
+                     "value": "Word",
                      "attributes": []
                   },
                   "$$hashKey": "object:3"
@@ -38,7 +54,7 @@
             "label": [
                {
                   "label": {
-                     "value": "label",
+                     "value": "Label A File",
                      "attributes": []
                   }
                },
@@ -57,7 +73,7 @@
          "skill": [
             {
                "skill": {
-                  "value": "skill",
+                  "value": "HTML/DHTML",
                   "attributes": [
                      {
                         "numOfYears": "8+ yrs"
