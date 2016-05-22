@@ -5,6 +5,7 @@ jvm.mainApp.service('util',
     function(){
         this.regex = jvm.regEx.fnc;        
         this.xml = jvm.xmlToJson.fnc;
+        this.objXml = new jvm.xmlToJson.ObjXml();
         this.httpRequest = jvm.requestHttp.fnc;
     }
 );
@@ -14,7 +15,8 @@ jvm.mainApp.controller('controllerMain', ['$scope', 'util', function($scope, uti
 
     var _fnc = {
         setData:function(options){
-            $scope.jsonFromXml = util.xml.convertXmlToJson({xml:options.data.responseXML});
+            
+            $scope.jsonFromXml = util.xml.convertXmlToJson({xml:options.data.responseXML}, util.objXml);
             $scope.$digest(); // tell angular to update model
             console.group('SET DATA');
                 console.log('$scope.jsonFromXml:\t', $scope.jsonFromXml);
