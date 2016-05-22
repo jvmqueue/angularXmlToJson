@@ -25,11 +25,15 @@ jvm.xmlToJson = (function(){
             var nodeParent = paramNode;
             var space = ' ';
             var json = {};
+            var strNodeValue = null;
+            var blnIsPrintable = false;
 
             for(var i = 0, len = paramNode.childNodes.length; i < len; i++){
                 if(paramNode.childNodes[i].nodeType === ELEMENT_NODE){
                     mStrTempDelete += paramNode.childNodes[i].nodeName  + ', ';
-                    json[paramNode.childNodes[i].nodeName] = paramNode.childNodes[i].firstChild.nodeValue;
+                    strNodeValue = paramNode.childNodes[i].firstChild.nodeValue;
+                    blnIsPrintable = !jvm.regEx.fnc.blnNotPrintable(strNodeValue);
+                    json[paramNode.childNodes[i].nodeName] = blnIsPrintable ? paramNode.childNodes[i].firstChild.nodeValue : '';
                     console.group('paramNode.childNodes[i]');
                         console.log('paramNode.childNodes[i].nodeName:\t', paramNode.childNodes[i].nodeName);
 //                        console.log('strTempDelete:\t', mStrTempDelete);
