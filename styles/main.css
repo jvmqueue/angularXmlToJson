@@ -1,3 +1,43 @@
+/* Begin Generics */
+body{
+    font-family:'Roboto', sans-serif;
+}
+.block{
+    display:block;
+}
+.clear{
+    clear:both;
+}
+.floatLeft{
+    float:left;
+}
+.floatRight{
+    float:right;
+}
+.floatChildrenLeft li{
+    float:left;
+}
+/* End Generics */
+/* Begin Menu Bar */
+.menuTop ul{
+    list-style:none;
+}
+.menuTop ul li{
+    display:block;
+    padding:0.6em;
+    border-radius:10px;
+}
+.menuTop ul li:hover{
+    background-color:#511D00;
+}
+.menuTop ul li a, .menuTop ul li a:link, .menuTop ul li a:visited, .menuTop ul li a:hover, .menuTop ul li a:active{
+    text-decoration:none;
+    color:#FFFFFF;
+}
+/* End Menu Bar */
+.pageBackground{
+    background-image: url(../images/mainBackground.jpg);
+}
 button a{
     text-decoration: none;
 }
